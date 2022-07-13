@@ -7,8 +7,5 @@
             "savePath": "/css"
         }
     ],
-    "liveSassCompile.settings.generateMap": false,
-    "liveSassCompile.settings.autoprefix": [
-    
-    ]
+    "liveSassCompile.settings.generateMap": false
 }
