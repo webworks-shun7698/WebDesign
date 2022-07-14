@@ -1,3 +1,17 @@
+.news > .news-wrapper {
+  margin: 50px auto;
+  max-width: 980px;
+  display: flex;
+  align-items: flex-start;
+}
+.news > .news-wrapper > .section-name {
+  display: block;
+  margin: 0;
+}
+.news > .news-wrapper > .article-list {
+  margin-left: 50px;
+}
+
 .sample {
   height: auto;
 }

@@ -1,0 +1,29 @@
+.news {
+    > .news-wrapper {
+        margin:50px auto;
+        max-width: 980px;
+        display: flex;
+        align-items: flex-start;
+    }
+    > .news-wrapper > .section-name {
+        display: block;
+        margin: 0;
+    }
+    > .news-wrapper > .article-list {
+        margin-left: 50px;
+    }
+}
+
+.c_article-card {
+    > .date {
+
+    }
+    > .title {
+
+    }
+    > .link {
+        
+    }
+}
+
+
