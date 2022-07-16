@@ -1,3 +1,5 @@
+@use "_variable.scss" as v;
+
 .news {
     > .news-wrapper {
         margin:50px auto;
@@ -8,6 +10,7 @@
     > .news-wrapper > .section-name {
         display: block;
         margin: 0;
+        line-height: 1;
     }
     > .news-wrapper > .article-list {
         margin-left: 50px;
@@ -15,14 +18,32 @@
 }
 
 .c_article-card {
-    > .date {
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 30px;
+    &:last-child {
+        margin-bottom: 0px;
+    }
+    > .date-wrapper {
 
     }
-    > .title {
-
+    > .date-wrapper > .date {
+        font-size: v.$font-xs;
+        margin-top: 4px;
     }
-    > .link {
-        
+    > .content {
+        margin-left: 30px;
+    }
+    > .content > .title {
+        display: block;
+        margin-top: 0px;
+        font-size: v.$font-m;
+    }
+    > .content > .desc {
+        font-size: v.$font-s;
+    }
+    > .content > .link {
+
     }
 }
 
