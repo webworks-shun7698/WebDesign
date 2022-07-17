@@ -1,15 +1,20 @@
-.news > .news-wrapper {
+.separate {
+  height: 30px;
+  background-color: yellow;
+}
+
+.news-1 > .news-wrapper {
   margin: 50px auto;
   max-width: 980px;
   display: flex;
   align-items: flex-start;
 }
-.news > .news-wrapper > .section-name {
+.news-1 > .news-wrapper > .section-name {
   display: block;
   margin: 0;
   line-height: 1;
 }
-.news > .news-wrapper > .article-list {
+.news-1 > .news-wrapper > .article-list {
   margin-left: 50px;
 }
 
