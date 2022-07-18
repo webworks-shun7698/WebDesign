@@ -1,25 +1,48 @@
-.sample {
-  height: auto;
+.c_article-card > .content > .link {
+  font-size: 11px;
+  text-decoration: underline;
 }
 
-.news > .news-wrapper {
+.separate {
+  height: 30px;
+  background-color: yellow;
+}
+
+.article-1 > .article-wrapper {
   margin: 50px auto;
   max-width: 980px;
   display: flex;
   align-items: flex-start;
 }
-.news > .news-wrapper > .section-name {
+.article-1 > .article-wrapper > .section-name {
   display: block;
   margin: 0;
   line-height: 1;
+  width: 200px;
 }
-.news > .news-wrapper > .article-list {
+.article-1 > .article-wrapper > .article-list {
   margin-left: 50px;
 }
 
+.article-2 > .article-wrapper {
+  margin: 50px auto;
+  max-width: 980px;
+}
+.article-2 > .article-wrapper > .section-name {
+  display: block;
+  line-height: 1;
+}
 .c_article-card {
   list-style-type: none;
   display: flex;
+  margin-bottom: 30px;
+}
+.c_article-card:last-child {
+  margin-bottom: 0px;
+}
+.c_article-card > .date-wrapper > .date {
+  font-size: 11px;
+  margin-top: 4px;
 }
 .c_article-card > .content {
   margin-left: 30px;
@@ -27,5 +50,61 @@
 .c_article-card > .content > .title {
   display: block;
   margin-top: 0px;
+  font-size: 16px;
+}
+.c_article-card > .content > .desc {
+  font-size: 14px;
+}
+.separate {
+  height: 30px;
+  background-color: yellow;
+}
+
+.article-1 > .article-wrapper {
+  margin: 50px auto;
+  max-width: 980px;
+  display: flex;
+  align-items: flex-start;
+}
+.article-1 > .article-wrapper > .section-name {
+  display: block;
+  margin: 0;
+  line-height: 1;
+  width: 200px;
+}
+.article-1 > .article-wrapper > .article-list {
+  margin-left: 50px;
+}
+
+.article-2 > .article-wrapper {
+  margin: 50px auto;
+  max-width: 980px;
+}
+.article-2 > .article-wrapper > .section-name {
+  display: block;
+  line-height: 1;
+}
+.c_article-card {
+  list-style-type: none;
+  display: flex;
+  margin-bottom: 30px;
+}
+.c_article-card:last-child {
+  margin-bottom: 0px;
+}
+.c_article-card > .date-wrapper > .date {
+  font-size: 11px;
+  margin-top: 4px;
+}
+.c_article-card > .content {
+  margin-left: 30px;
+}
+.c_article-card > .content > .title {
+  display: block;
+  margin-top: 0px;
+  font-size: 16px;
+}
+.c_article-card > .content > .desc {
+  font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */

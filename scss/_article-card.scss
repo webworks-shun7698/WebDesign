@@ -1,26 +1,5 @@
 @use "_variable.scss" as v;
-
-.separate {
-    height: 30px;
-    background-color: yellow;
-}
-
-.news-1 {
-    > .news-wrapper {
-        margin:50px auto;
-        max-width: 980px;
-        display: flex;
-        align-items: flex-start;
-    }
-    > .news-wrapper > .section-name {
-        display: block;
-        margin: 0;
-        line-height: 1;
-    }
-    > .news-wrapper > .article-list {
-        margin-left: 50px;
-    }
-}
+@use "_link-btn.scss";
 
 .c_article-card {
     list-style-type: none;
@@ -48,7 +27,7 @@
         font-size: v.$font-s;
     }
     > .content > .link {
-
+        @extend %c_link;
     }
 }
 

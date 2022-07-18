@@ -1,0 +1,6 @@
+@use "_variable.scss" as v;
+
+%c_link {
+    font-size: v.$font-xs;
+    text-decoration: underline;
+}

@@ -1,0 +1,36 @@
+.separate {
+    height: 30px;
+    background-color: yellow;
+}
+
+.article-1 {
+    > .article-wrapper {
+        margin:50px auto;
+        max-width: 980px;
+        display: flex;
+        align-items: flex-start;
+    }
+    > .article-wrapper > .section-name {
+        display: block;
+        margin: 0;
+        line-height: 1;
+        width: 200px;
+    }
+    > .article-wrapper > .article-list {
+        margin-left: 50px;
+    }
+}
+
+.article-2 {
+    > .article-wrapper {
+        margin:50px auto;
+        max-width: 980px;
+    }
+    > .article-wrapper > .section-name {
+        display: block;
+        line-height: 1;
+    }
+    > .article-wrapper > .article-list {
+
+    }
+}
