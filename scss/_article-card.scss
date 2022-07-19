@@ -1,7 +1,7 @@
 @use "_variable.scss" as v;
 @use "_link-btn.scss";
 
-.c_article-card {
+.c_article-card-1 {
     list-style-type: none;
     display: flex;
     margin-bottom: 30px;
@@ -28,6 +28,27 @@
     }
     > .content > .link {
         @extend %c_link;
+    }
+}
+
+.c_article-card-2 {
+    > .img-wrapper {
+
+    }
+    > .img-wrapper > .img {
+
+    }
+    > .content {
+
+    }
+    > .content > .title {
+
+    }
+    > .content > .source {
+
+    }
+    > .content > .date {
+        
     }
 }
 

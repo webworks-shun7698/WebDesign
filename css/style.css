@@ -1,29 +1,29 @@
-.c_article-card > .content > .link {
+.c_article-card-1 > .content > .link {
   font-size: 11px;
   text-decoration: underline;
 }
 
-.c_article-card {
+.c_article-card-1 {
   list-style-type: none;
   display: flex;
   margin-bottom: 30px;
 }
-.c_article-card:last-child {
+.c_article-card-1:last-child {
   margin-bottom: 0px;
 }
-.c_article-card > .date-wrapper > .date {
+.c_article-card-1 > .date-wrapper > .date {
   font-size: 11px;
   margin-top: 4px;
 }
-.c_article-card > .content {
+.c_article-card-1 > .content {
   margin-left: 30px;
 }
-.c_article-card > .content > .title {
+.c_article-card-1 > .content > .title {
   display: block;
   margin-top: 0px;
   font-size: 16px;
 }
-.c_article-card > .content > .desc {
+.c_article-card-1 > .content > .desc {
   font-size: 14px;
 }
 .separate {
