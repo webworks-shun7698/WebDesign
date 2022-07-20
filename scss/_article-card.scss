@@ -27,28 +27,55 @@
         font-size: v.$font-s;
     }
     > .content > .link {
-        @extend %c_link;
+        @extend %c_link-1;
     }
 }
 
 .c_article-card-2 {
+    display: flex;
+    align-items: flex-start;
+    text-decoration: none;
+    margin-bottom: 30px;
+    &:last-child {
+        margin-bottom: 0px;
+    }
+    &:hover > .content > .title {
+        text-decoration: underline;
+    }
     > .img-wrapper {
-
+        min-width: 80px;
+        max-width: 80px;
+        height: 80px;
+        &.-wide {
+            min-width: 200px;
+            max-width: 200px;
+            height: 105px;
+        }
     }
     > .img-wrapper > .img {
-
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
     > .content {
-
+        margin-left: 10px;
     }
     > .content > .title {
-
+        margin: 0px;
+        font-size: v.$font-m;
     }
     > .content > .source {
-
+        @extend %c_link-1;
+        margin-top: 4px;
+        margin-bottom: 0px;
+        display: inline;
     }
     > .content > .date {
-        
+        @extend %c_link-1;
+        margin-top: 4px;
+        margin-bottom: 0px;
+        margin-left: 4px;
+        display: inline;
     }
 }
 
