@@ -34,3 +34,13 @@
 
     }
 }
+
+.flex-contena-1 {
+    > .flex-wrapper {
+        margin: 50px auto;
+        max-width: 1070px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
