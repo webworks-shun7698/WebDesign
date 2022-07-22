@@ -2,9 +2,44 @@
 @use "_link-btn.scss";
 
 .c_article-card-1 {
-  width: 350px;
-  height: 470px;
-  background-color: yellow;
-}
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    > .img-wrapper {
+        background-image: url(../img/sample.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: transform .3s ease-out;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+    > .img-wrapper:hover {
+        transform: scale(1.1);
+    }
+    > .content {
+        position: absolute;
+        background-color: white;
+        bottom: 0;
+        width: 100%;
+        height: 40%;
+        padding: 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    > .content > .title {
+        font-size: v.$font-l;
+    }
+    > .content > .tag {
 
+    }
+    > .content > .tag > .time {
+        font-size: v.$font-s;
+    }
+    > .content > .tag > .view {
+        font-size: v.$font-s;
+    }
+}
 
