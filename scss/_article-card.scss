@@ -31,6 +31,7 @@
     }
     > .content > .title {
         font-size: v.$font-l;
+        //文字の超過はPHP側(WordPress)で対応する
     }
     > .content > .tag {
 
@@ -38,8 +39,21 @@
     > .content > .tag > .time {
         font-size: v.$font-s;
     }
+    > .content > .tag > .time::before {
+        font-family: 'Material Icons';
+        content: '\e8b5';
+        vertical-align: middle;
+        margin-right: 2px;
+    }
     > .content > .tag > .view {
         font-size: v.$font-s;
+        margin-left: 5px;
+    }
+    > .content > .tag > .view::before {
+        font-family: 'Material Icons';
+        content: '\e8f4';
+        vertical-align: middle;
+        margin-right: 2px;
     }
 }
 

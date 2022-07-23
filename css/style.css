@@ -106,8 +106,21 @@
 .c_article-card-1 > .content > .tag > .time {
   font-size: 14px;
 }
+.c_article-card-1 > .content > .tag > .time::before {
+  font-family: "Material Icons";
+  content: "\e8b5";
+  vertical-align: middle;
+  margin-right: 2px;
+}
 .c_article-card-1 > .content > .tag > .view {
   font-size: 14px;
+  margin-left: 5px;
+}
+.c_article-card-1 > .content > .tag > .view::before {
+  font-family: "Material Icons";
+  content: "\e8f4";
+  vertical-align: middle;
+  margin-right: 2px;
 }
 
 .separate {
