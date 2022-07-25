@@ -1,5 +1,23 @@
 @use "_variable.scss" as v;
 
+.wrapper {
+    overflow: hidden;
+    
+}
+
 %c_link-1 {
     font-size: v.$font-xs;
+}
+
+.c_link-marquee {
+    text-decoration: none;
+    animation : text-marquee 10s linear infinite;
+    white-space : nowrap;
+    display: inline-block;
+    overflow: hidden;
+}
+
+@keyframes text-marquee {
+    0% {transform: translateX(100%)}
+    100% {transform: translateX(-100%)}
 }

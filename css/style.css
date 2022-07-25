@@ -1,7 +1,27 @@
+.wrapper {
+  overflow: hidden;
+}
+
 .c_article-list-1 > .content > .link, .c_article-list-2 > .content > .source, .c_article-list-2 > .content > .date {
   font-size: 11px;
 }
 
+.c_link-marquee {
+  text-decoration: none;
+  animation: text-marquee 10s linear infinite;
+  white-space: nowrap;
+  display: inline-block;
+  overflow: hidden;
+}
+
+@keyframes text-marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 .c_article-list-1 {
   list-style-type: none;
   display: flex;

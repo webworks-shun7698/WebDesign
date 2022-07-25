@@ -2,74 +2,8 @@
   font-size: 11px;
 }
 
-.c_article-list-1 {
-  list-style-type: none;
-  display: flex;
-  margin-bottom: 30px;
-}
-.c_article-list-1:last-child {
-  margin-bottom: 0px;
-}
-.c_article-list-1 > .date-wrapper > .date {
-  font-size: 11px;
-  margin-top: 4px;
-}
-.c_article-list-1 > .content {
-  margin-left: 30px;
-}
-.c_article-list-1 > .content > .title {
-  display: block;
-  margin-top: 0px;
-  font-size: 16px;
-}
-.c_article-list-1 > .content > .desc {
-  font-size: 14px;
-}
-.c_article-list-2 {
-  display: flex;
-  align-items: flex-start;
+.c_link-marquee {
   text-decoration: none;
-  margin-bottom: 30px;
-}
-.c_article-list-2:last-child {
-  margin-bottom: 0px;
-}
-.c_article-list-2:hover > .content > .title {
-  text-decoration: underline;
-}
-.c_article-list-2 > .img-wrapper {
-  min-width: 80px;
-  max-width: 80px;
-  height: 80px;
-}
-.c_article-list-2 > .img-wrapper.-wide {
-  min-width: 200px;
-  max-width: 200px;
-  height: 105px;
-}
-.c_article-list-2 > .img-wrapper > .img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.c_article-list-2 > .content {
-  margin-left: 10px;
-}
-.c_article-list-2 > .content > .title {
-  margin: 0px;
-  font-size: 16px;
-}
-.c_article-list-2 > .content > .source {
-  margin-top: 4px;
-  margin-bottom: 0px;
-  display: inline;
-}
-.c_article-list-2 > .content > .date {
-  margin-top: 4px;
-  margin-bottom: 0px;
-  margin-left: 4px;
-  display: inline;
 }
 
 .c_article-list-1 {
@@ -140,6 +74,102 @@
   margin-bottom: 0px;
   margin-left: 4px;
   display: inline;
+}
+
+.c_article-card-1 {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.c_article-card-1 > .img-wrapper {
+  background-image: url(../img/sample.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease-out;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.c_article-card-1 > .img-wrapper:hover {
+  transform: scale(1.1);
+}
+.c_article-card-1 > .content {
+  position: absolute;
+  background-color: white;
+  bottom: 0;
+  width: 100%;
+  height: 40%;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.c_article-card-1 > .content > .title {
+  font-size: 24px;
+}
+.c_article-card-1 > .content > .tag > .time {
+  font-size: 14px;
+}
+.c_article-card-1 > .content > .tag > .time::before {
+  font-family: "Material Icons";
+  content: "\e8b5";
+  vertical-align: middle;
+  margin-right: 2px;
+}
+.c_article-card-1 > .content > .tag > .view {
+  font-size: 14px;
+  margin-left: 5px;
+}
+.c_article-card-1 > .content > .tag > .view::before {
+  font-family: "Material Icons";
+  content: "\e8f4";
+  vertical-align: middle;
+  margin-right: 2px;
+}
+
+.c_article-card-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 35px;
+  background-color: white;
+}
+.c_article-card-2 > .upper-contents > .img-wrapper {
+  border-radius: 50%;
+  margin: 0 auto;
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+}
+.c_article-card-2 > .upper-contents > .img-wrapper > .img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.c_article-card-2 > .upper-contents > .name-title {
+  text-align: center;
+}
+.c_article-card-2 > .upper-contents > .name-title > .name {
+  line-height: 1.5;
+  margin-bottom: 0;
+  font-size: 24px;
+}
+.c_article-card-2 > .upper-contents > .name-title > .title {
+  line-height: 1;
+  margin: 0;
+  font-size: 16px;
+  color: rgb(245, 74, 74);
+}
+.c_article-card-2 > .SNS {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.c_article-card-2 > .SNS > .icon {
+  cursor: pointer;
+  color: rgb(245, 74, 74);
 }
 
 .separate {
@@ -171,10 +201,24 @@
   display: block;
   line-height: 1;
 }
+.flex-contena-1 {
+  padding: 10px 0px;
+  background-color: gray;
+}
 .flex-contena-1 > .flex-wrapper {
   margin: 50px auto;
-  max-width: 980px;
+  max-width: 1070px;
   display: flex;
   flex-wrap: wrap;
+}
+.flex-contena-1 > .flex-wrapper > .item {
+  width: 32%;
+  height: 470px;
+}
+.flex-contena-1 > .flex-wrapper > .item:not(:nth-child(3n+3)) {
+  margin-right: 2%;
+}
+.flex-contena-1 > .flex-wrapper > .item:nth-child(n+4) {
+  margin-top: 20px;
 }
 /*# sourceMappingURL=style.css.map */
