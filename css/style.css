@@ -235,3 +235,16 @@
 .flex-contena-1 > .flex-wrapper > .item:nth-child(n+4) {
   margin-top: 20px;
 }
+
+.zoom-in {
+  animation: zoom-in 5s;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
