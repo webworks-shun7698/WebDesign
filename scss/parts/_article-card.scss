@@ -103,3 +103,63 @@
     }
 }
 
+.c_article-card-3 {
+    position: relative;
+    > .img-wrapper {
+        width: 100%;
+        height: 100%;
+    }
+    > .img-wrapper > .img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    > .content-wrapper {
+        position: absolute;
+        height: 45%;
+        width: 100%;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px 20px 50px;
+    }
+    > .content-wrapper > .case-wrapper {
+        text-align: center;
+    }
+    > .content-wrapper > .case-wrapper > .case {
+        color: white;
+        font-size: v.$font-xs;
+        text-align: center;
+        border: 1px solid white;
+        border-radius: 8%;
+        padding: 2px;
+    }
+    > .content-wrapper > .title-name {
+        
+    }
+    > .content-wrapper > .title-name > .title {
+        color: white;
+        margin: 0;
+        font-size: v.$font-s;
+        text-align: center;
+    }
+    > .content-wrapper > .title-name > .name {
+        color: white;
+        margin: 0;
+        line-height: 1.2;
+        font-size: v.$font-xl;
+        font-weight: bold;
+        text-align: center;
+    }
+    > .content-wrapper > .btn-wrapper {
+        color: white;
+        text-align: center;
+    }
+    > .content-wrapper > .btn-wrapper > .c_btn {
+        padding: 4px;
+        border: 2px solid white;
+        font-size: v.$font-xs;
+    }
+}
+
