@@ -55,3 +55,52 @@
         }
     }
 }
+
+.c_full-img-wrapper-1 {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    > .img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.c_full-img-wrapper-2 {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    > .img-wrapper {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+    }
+    > .img-wrapper > .img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.c_horizon-flex-wrapper-1 {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: visible;
+    > .item {
+        flex-shrink: 0;
+        width: 350px;
+        height: 470px;
+        margin-right: 10px;
+    }
+    > .item:last-child {
+        margin-right: 0;
+    }
+    > .item > .img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
