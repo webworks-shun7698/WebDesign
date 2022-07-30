@@ -6,26 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <title>Document</title>
 
 </head>
 <body>
-    <div class="c_full-img-wrapper-2">
+    <!-- <div class="c_full-img-wrapper-2">
         <div class="img-wrapper j_slider-target">
             <img class="img" src="../img/sample.jpg">
         </div>
-        <div class="img-wrapper j_slider-target">
+        <div class="img-wrapper j_slider-target slider-next">
             <img class="img" src="../img/sample-1.jpg">
         </div>
-        <div class="img-wrapper j_slider-target">
+        <div class="img-wrapper j_slider-target slider-off">
             <img class="img" src="../img/sample-2.jpg">
         </div>
-        <div class="img-wrapper j_slider-target">
+        <div class="img-wrapper j_slider-target slider-prior">
             <img class="img" src="../img/sample-3.jpg">
         </div>
     </div>
 
+    <script src="../js/slider.js"></script> -->
+
+    <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="../js/slider.js"></script>
 </body>
 </html>

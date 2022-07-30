@@ -1,0 +1,16 @@
+.swiper-container {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    > .swiper-wrapper {
+ 
+    }
+    > .swiper-wrapper > .swiper-slide {
+        
+    }
+    > .swiper-wrapper > .swiper-slide > .img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
