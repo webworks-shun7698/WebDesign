@@ -1,14 +1,14 @@
-const swiper = new Swiper(".swiper", {
-    // ページネーションが必要なら追加
-    pagination: {
-      el: ".swiper-pagination"
-    },
-    // ナビボタンが必要なら追加
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    }
-  });
+// const swiper = new Swiper(".swiper", {
+//     // ページネーションが必要なら追加
+//     pagination: {
+//       el: ".swiper-pagination"
+//     },
+//     // ナビボタンが必要なら追加
+//     navigation: {
+//       nextEl: ".swiper-button-next",
+//       prevEl: ".swiper-button-prev"
+//     }
+//   });
 // クリックで画像が切り替わる
 // window.addEventListener('load', function(){
 //     var target = document.getElementsByClassName('j_slider-target');
