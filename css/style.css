@@ -252,9 +252,18 @@
   height: 100%;
   width: 100%;
   background-color: yellow;
+  z-index: 2;
+  opacity: 0.6;
+  animation: curtain 2s ease-in-out forwards;
+}
+.c_article-card-4 > .overlap-2 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: gray;
   z-index: 1;
   opacity: 0.6;
-  animation: curtain 2s forwards;
+  animation: curtain-2 2s ease-in-out forwards;
 }
 .c_article-card-4 > .img {
   width: 100%;
@@ -262,7 +271,6 @@
   object-fit: cover;
   position: absolute;
   top: 0;
-  animation: filter 2s forwards;
 }
 
 @keyframes curtain {
@@ -279,15 +287,15 @@
     left: -100%;
   }
 }
-@keyframes filter {
+@keyframes curtain-2 {
   0% {
-    filter: grayscale(90%);
-  }
-  40% {
-    filter: grayscale(90%);
+    left: 0%;
   }
   60% {
-    filter: grayscale(0%);
+    left: 0%;
+  }
+  100% {
+    left: -100%;
   }
 }
 .separate {
@@ -514,4 +522,66 @@
   100% {
     transform: rotate(180deg);
   }
+}
+.wrapper {
+  padding: 100px;
+}
+.wrapper:first-child {
+  background-color: #191970;
+}
+.wrapper:first-child > .contena {
+  color: white;
+}
+.wrapper > .contena {
+  margin: auto;
+  width: 50%;
+}
+
+.diagonal {
+  width: 100vw;
+  height: 150px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0%);
+  background-color: #191970;
+  animation: diagonal 3s linear forwards;
+}
+
+.list-wrapper > .list-1 {
+  list-style-type: none;
+  display: flex;
+}
+.list-wrapper > .list-1 > .item {
+  font-size: 14px;
+  margin-right: 20px;
+}
+.list-wrapper > .list-1 > .item:last-child {
+  margin-right: 0px;
+}
+.list-wrapper > .list-1 > .item > .link {
+  text-decoration: none;
+  display: block;
+  height: 100%;
+}
+
+.item {
+  position: relative;
+}
+.item > .sub-list {
+  position: absolute;
+  list-style-type: none;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: center top;
+  transition: 0.3s;
+}
+.item > .sub-list > .sub-item {
+  font-size: 14px;
+  line-height: 2;
+  white-space: nowrap;
+}
+.item:hover > .sub-list {
+  transform: scaleY(1);
+  opacity: 1;
+}
+.item > .sub-list > .sub-item > .sub-link {
+  text-decoration: none;
 }
